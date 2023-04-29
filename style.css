@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+html{scroll-behavior: smooth;}
+html{
+    box-sizing: border-box;
+}
+*,*::after{
+    box-sizing: inherit;
+}
+/*=============
+ 1-header
+ =============*/
+a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    display: inline-block;
+}
+
+a:hover{
+    background-color: #9C5B46;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+.fa-flask-vial{
+    font-size: 13px;
+}
+.fa-magnifying-glass{
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+.logo{
+    background-color: #118499;
+}
+.Products{
+    background-color: #B4A789;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+
+
+    position: absolute;
+    left: 220px; ;
+
+    visibility: hidden;
+}
+.drop:hover + .Products{
+    visibility: visible;
+}
+.contact{
+    background-color: #B4A789;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+
+
+    position: absolute;
+    left: 660px; ;
+
+    visibility: hidden;
+}
+.down:hover + .contact{
+    visibility: visible;
+}
+/*==============
+2-image
+===============*/
+.main-img{
+    width: 100%;
+    height: 700px;
+}
+.about{
+    color: #6dcfe0;
+    font-size: 30px;
+    border: 2px solid #6dcfe0;
+
+    position: relative;
+    bottom: 250px;
+    left: 900px;
+    background-color: black;
+}
+.containe{
+    position: relative;
+    width: 100%;
+  }
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #118499;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+.containe:hover .overlay {
+    transform: scale(1);
+  }
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+/*==============
+2-about us
+===============*/
+.gray{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    background-color: #118499;
+}
+
+
+.aboutus{
+    color: #118499;
+    font-size: 60px;
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+}
+.meet{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 75px;
+}
+
+/*==============
+3-Products
+===============*/
+.black{
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #118499;
+}
+.Products{
+   width:25%;
+   color: #118499;
+}
+.hp{
+    color: #118499;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    bottom: 110px;
+    left: 500px;
+}
+.wp{
+    position: relative;
+    bottom: 70px;
+    color: #fff;
+}
+
+.balan{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*=============
+4-Testimonials
+=============*/
+.video{
+    height: 300px;
+    width: 560px;
+    background-color: #118499;
+
+}
+.test{
+    color: #118499;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    bottom: 110px;
+    left: 290px;
+}
+.TV{
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
+    background-color: #118499;
+    color: #fff;
+}
+.textvideo{
+    position: relative;
+    bottom: 70px;
+
+}
+
+
+/*==============
+5-Team
+===============*/
+.ourteam, .team{
+    text-align: center;
+}
+.ourteam{
+    color: #118499;
+    font-size: 60px;
+}
+.team{
+    background-color: #118499;
+    color: #fff;
+    font-size: 33px;
+}
+.download{
+    border-radius: 20%;
+    width: 50%;
+    background-color: #118499;
+}
+.ahmed{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.division{
+    text-align: center;
+    margin-top: 20px;
+}
+.img{
+    display: flex;
+    justify-content: space-around;
+    background-color: #118499;
+}
+.team{
+    font-size:large;
+
+}
+.eng{
+    color: #fff;
+}
+
+
+
+/*==============
+6-contact us
+===============*/
+
+
+
+.form{
+    background-color: #118499;
+    margin-top: 100px;
+    padding: 60px;
+    display: flex;
+
+}
+
+
+.form h1{
+    color: #fff;
+    border-bottom: 4px solid #B4A789;
+    display: inline-block;
+    font-size: 60px;
+
+    
+    
+
+}
+.form p{
+    color: #fff;
+    width: 40%;
+    line-height: 30px;
+    padding-left: 20px;
+
+
+
+
+}
+
+
+
+/*.map{
+     display: flex;
+     justify-content: space-around;
+     margin-top: 100px;
+     margin-left: 450px;
+     margin-right: 100px;
+     margin-bottom: 100px;
+     padding-left: 400px
+    }*/
+
+
+
+
+
+/*==============
+6-form
+===============*/
+.real{
+    border: 2px solid #118499;
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 450px;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    background-color: #118499;
+    width: 55%;
+    box-shadow: 5px 5px 25px #118499;
+
+}
+.input{
+    border: 4px solid #B4A789;
+    height: 30px;
+    width: 100%;
+}
+.label{
+    color: #fff;
+}
+button{
+    background-color: #B4A789;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    float: right;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+/*==============
+6-footer
+===============*/
+footer{
+    margin-top: 100px;
+    background-color: #118499;
+    padding: 40px 0;
+
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 30px;
+    border-bottom: 5px solid #fff;
+}
+.follow{
+    display: flex;
+    justify-content: center;
+
+}
+
+.follow div{
+    border: 2px solid #fff;
+    background-color: #118499;
+    color: #fff;
+    padding: 8px 16px;
+    margin-left: 10px;
+
+
+}
+.follow div:hover{
+    background-color: #9C5B46;
+}
